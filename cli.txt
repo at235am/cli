@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------
+command		mod1		mod2		arg			description
+-------------------------------------------------------------------------------------------------------------------------------------------------
+cd						[path]			: move to path directory
+cd		..							: go back to previous directory
+ls									: list all sub-directories and files
+clear									: clears the cli
+touch 						[filename.filetype]	: creates a file
+mkdir 						[foldername]		: creates a directory (folder)
+rm 						[filename.filetype]	: deletes a file
+rm 		-rf 				[foldername]		: deletes a directory (folder) and all the sub-directories (sub-folders)
+
+npm		install				[packagename]		: installs a node package
+npm		install 	--save		[packagename]		: installs a node package and adds the package the package.json dependencies
+npm		init							: creates a new package.json with prompts
+node						[app.js]		: runs a javascript file
+node									: opens an executable javascript cli (ctrl+c to exit)
+
+code						[filename.filetype]	: opens the file in the vscode editor
+curl						[http request]		: returns the html of a http request
+
+git init
+git remote add origin [repo url]
+git add [file]
+git add -A
+git commit -m "message"
+git push origin master
+git remote show origin (shows whether or not your local branch is up to date with the remote branch)
+
+
+mongod
