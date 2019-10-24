@@ -7,11 +7,11 @@ mkdir [foldername]		        : creates a directory (folder)
 rm [filename.filetype]	                : deletes a file
 rm -rf [foldername]		        : deletes a directory (folder) and all the sub-directories (sub-folders)
  
-npm	init				: creates a new package.json with prompts
+npm init				: creates a new package.json with prompts
 npm install                             : installs all packages in the package.json file but updates the packages to the current newest
 npm cli                                 : installs EXACT version number of all packages in the package-lock.json file
-npm	install	[packagename]		: installs a specific node package
-npm	install --save [packagename]	: installs a node package and updates the package.json / package-lock.json files
+npm install [packagename]		: installs a specific node package
+npm install --save [packagename]	: installs a node package and updates the package.json / package-lock.json files
 
 node [filename.js]		        : runs a javascript file
 node	                                : opens an executable javascript cli (ctrl+c to exit)
@@ -56,3 +56,6 @@ git fetch origin [branch]		: retrieves changes from remote repo but does not add
 git diff [branch1] [branch2]		: get the difference between two branches
 
 git config core.autocrlf [value]        : [value]= true (windows) / input / false
+git config --global user.name "x" 	: x = git username; sets your username for your local machine
+git config --global user.email "x"	: x = git email; sets your email for your local machine
+git config --global core.editor "x"	: x = path of text editor installation; sets your default text editor
