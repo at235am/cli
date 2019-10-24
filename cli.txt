@@ -1,38 +1,37 @@
-
-cd [path]			                    : move to path directory
-cd ..					                : go back to previous directory
-ls						                : list all sub-directories and files
-clear					                : clears the cli
-touch [filename.filetype]	            : creates a file
-mkdir [foldername]		                : creates a directory (folder)
+cd [path]			        : move to path directory
+cd ..					: go back to previous directory
+ls					: list all sub-directories and files
+clear					: clears the cli
+touch [filename.filetype]	        : creates a file
+mkdir [foldername]		        : creates a directory (folder)
 rm [filename.filetype]	                : deletes a file
-rm -rf [foldername]		                : deletes a directory (folder) and all the sub-directories (sub-folders)
+rm -rf [foldername]		        : deletes a directory (folder) and all the sub-directories (sub-folders)
  
-npm	init							    : creates a new package.json with prompts
+npm	init				: creates a new package.json with prompts
 npm install                             : installs all packages in the package.json file but updates the packages to the current newest
 npm cli                                 : installs EXACT version number of all packages in the package-lock.json file
-npm	install	[packagename]		        : installs a specific node package
-npm	install --save [packagename]		: installs a node package and updates the package.json / package-lock.json files
+npm	install	[packagename]		: installs a specific node package
+npm	install --save [packagename]	: installs a node package and updates the package.json / package-lock.json files
 
-node [filename.js]		                : runs a javascript file
+node [filename.js]		        : runs a javascript file
 node	                                : opens an executable javascript cli (ctrl+c to exit)
 
-code [filename.filetype]	            : opens the file in the vscode editor
-curl [http request]		                : returns the html of a http request
+code [filename.filetype]	        : opens the file in the vscode editor
+curl [http request]		        : returns the html of a http request
 
-git init								: initializes a directory to make it a git repo
-git status								: shows tracked, untracked, modified, or deleted files
-git log									: shows all commit on the current branch
+git init				: initializes a directory to make it a git repo
+git status				: shows tracked, untracked, modified, or deleted files
+git log					: shows all commit on the current branch
 
-git remote show origin					: shows whether or not your local branch is up to date with the remote branch and other info
-git remote add origin [repo url]		: links your local repo with a remote rep [repo url]
+git remote show origin			: shows whether or not your local branch is up to date with the remote branch and other info
+git remote add origin [repo url]	: links your local repo with a remote rep [repo url]
 
-git add [file]							: add [file] to the staging area
-git add -A								: add all tracked & untracked files to the staging area
-git commit -m "message"					: commits all files in staging area with the commit msg
-git commit --amend -m "message"			: change your most recent commit message (ONLY USE ON COMMITS THAT HAVE NOT BEEN PUSHED TO A REMOTE REPO)
-git commit --amend						: adds all staged changes to your most recent commit (can also change commit message)
-git checkout [filename]					: undo uncommitted changes on [filename]
+git add [file]				: add [file] to the staging area
+git add -A				: add all tracked & untracked files to the staging area
+git commit -m "message"			: commits all files in staging area with the commit msg
+git commit --amend -m "message"		: change your most recent commit message (ONLY USE ON COMMITS THAT HAVE NOT BEEN PUSHED TO A REMOTE REPO)
+git commit --amend			: adds all staged changes to your most recent commit (can also change commit message)
+git checkout [filename]			: undo uncommitted changes on [filename]
 git cherry-pick [commithash]            : moves a commit to the current branch
 
 git reset --soft [commithash](opt)      : resets working directory to the specified commit but keeps current changes
@@ -41,19 +40,19 @@ git reset --hard [commithash](opt)      :
 
 git clean -df                           : gets rid of untracked [d]irectories and [f]iles
 
-git push origin [branch]				: pushes your staged commits to the [branch name] in the origin repo
-git pull origin [branch]				: fetches and merges all changes from the remote repo 'origin' into the [branch name]
-git clone [repo url]					: git init and downloads everything from the remote repo
+git push origin [branch]		: pushes your staged commits to the [branch name] in the origin repo
+git pull origin [branch]		: fetches and merges all changes from the remote repo 'origin' into the [branch name]
+git clone [repo url]			: git init and downloads everything from the remote repo
 
-git branch -a 							: shows all branches; origin/[branch] is the remote branches
-git checkout [branch]					: switches to [branch]
-git branch [branchname]					: creates new branch with name [branch]
-git checkout -b [branch] 			    : creates a branch if it does not exist and switches to it
+git branch -a 				: shows all branches; origin/[branch] is the remote branches
+git checkout [branch]			: switches to [branch]
+git branch [branchname]			: creates new branch with name [branch]
+git checkout -b [branch] 		: creates a branch if it does not exist and switches to it
 
-git merge [branch1] [branch2]			: merge [branchn2] INTO [branch1]
-git branch -d [branch]			        : delete branch; use -D for force delete
+git merge [branch1] [branch2]		: merge [branchn2] INTO [branch1]
+git branch -d [branch]			: delete branch; use -D for force delete
 
-git fetch origin [branch]				: retrieves changes from remote repo but does not add them to your working tree (chan)
-git diff [branch1] [branch2]			: get the difference between two branches
+git fetch origin [branch]		: retrieves changes from remote repo but does not add them to your working tree (chan)
+git diff [branch1] [branch2]		: get the difference between two branches
 
-git config core.autocrlf [value]        : [value]= true (windows) / input / 
+git config core.autocrlf [value]        : [value]= true (windows) / input / false
